@@ -25,6 +25,93 @@
     </script>
 	
 
+	<style type="text/css">
+        body
+        {
+            margin: 0 auto;
+            padding: 0;
+            font-size: 9pt;
+            line-height: 180%;
+        }
+        
+        #pn
+        {
+            background: #f8f8f8;
+            height: auto;
+            width: 900px;
+            display: block;
+            margin: 0 auto;
+            padding: 5px;
+        }
+        
+        
+        .btn
+        {
+            width: 80px;
+            height: 20px;
+            padding: 5px 3px 5px 3px;
+            text-align: center;
+            text-decoration: none;
+            background: #f0f0f0;
+            border: 1px solid #CCC;
+        }
+        .content
+        {
+            border: 1px solid #CCC;
+            display: none;
+            padding: 5px;
+        }
+        .title
+        {
+            font-weight: bold;
+            color: #3030FF;
+            font-size:11pt;
+        }
+        .subtitle
+        {
+            color: #CCC;
+        }
+        .btm
+        {
+            text-align: right;
+            height: 30px;
+        }
+    </style>
+	
+    <script type="text/javascript">
+        var time = 300;
+        var h = 40;
+        function showdiv(obj) {
+
+            //obj.parentNode.nextSibling.nextSibling.style.display = "block";
+            var x = obj.parentNode.nextSibling;
+            //包含众多空格作为文本节点，因此在我们使用nextSibling和previousSibling时就会出现问题。
+            //因为FireFox会把文本节点误当做元素节点的兄弟节点来处理。我们可以添加nodeType来判断。
+            //当上一节点或者是下一节点为文本节点时，就继续寻找，直到找到下一个元素节点。
+            //  其中nodeType的值主要有以下几种：
+            // 
+            // 元素节点的nodeType值为1
+            // 属性节点的nodeType值为2
+            // 文本节点的nodeType值为3
+            if (x.nodeType != 1) {
+                x = x.nextSibling;
+            }
+            x.style.display = "block";
+            obj.parentNode.style.display = "none";
+
+        }
+        function hidediv(obj) {
+
+            obj.parentNode.parentNode.style.display = "none";
+            var x = obj.parentNode.parentNode.previousSibling;
+            if (x.nodeType != 1) {
+                x = x.previousSibling;
+            }
+            x.style.display = "block";
+        }
+        
+    </script>
+	
 </head>
 
 
@@ -49,8 +136,103 @@
 闲话不叙。<br/>
 </font></p>
 
+<div id="pn">
+        <div>
+            <p class="title">
+                知乎回答集——宗教很明显跟科学矛盾，为何有部分人信奉？</p>
+            <p class="subtitle">
+                作者：归根 修改时间：18/1/22 </p>
+            <p>
+                这个命题有点大。我只能略微一谈。首先，科学和宗教都是不同视角下衍生的世界观。不同的视角看到不同的东西，其实很正常，所以各自思路不同，各自局限不一，最终对世界的理解以及其后的行动方向都迥然相异。再谈自证，很多时候人会有自证的倾向，容易注意到能够证明他自己观点的依据，但是却看不到支持其他观点的证据（天之生物，必因其质而笃焉）。所以各自在各自的方向上渐行渐远……<a onclick="showdiv(this);" href="#">全文</a>
+            </p>
+            <div class="content">
+			
+                <div style="margin-top: 9px; margin-bottom: -4px; overflow: hidden; color: rgb(38, 38, 38); font-size: 15px; orphans: 2; widows: 2; ">
+
+                    <p>
+					    <br>这个命题有点大。我只能略微一谈。<br/></p>
+
+                    <p>
+					     <br><span style="font-weight: 600;">1.</span>首先，科学和宗教都是不同视角下衍生的世界观。不同的视角看到不同的东西，其实很正常，所以各自思路不同，各自局限不一，最终对世界的理解以及其后的行动方向都迥然相异。再谈自证，很多时候人会有自证的倾向，容易注意到能够证明他自己观点的依据，但是却看不到支持其他观点的证据（天之生物，必因其质而笃焉）。所以各自在各自的方向上渐行渐远，形成了不同的体系。<br/></p>
+                    
+					<div><br/></div>
+
+                    <p>
+					<br><span style="font-weight: 600;">2.</span>科学是在不断趋近真理，而不是一个绝对的真理，其本身对于世界的认识在不断变化发展，在不断接近更加广大而真实的世界。我们用理论物理来解释世界，但很可惜目前为止没有一种假说能普适地解释所有的现象并被应用的，就是说，我们自以为傲的科学其实对这个世界并没有多少了解。</p>
+					
+                    <p>
+					没有任何一种理论能解释现阶段发现的所有现象——至少我没见到。</p>
+					
+                    <p>
+					西方理论从哲学发展到逻辑，再到数理逻辑（数学语言），物理、化学等开始发展，数学从工具到理论研究……目前还在不断发展。</p>
+					
+                    <p>
+					科学，只是当今世界主流的一种世界观而已，其实还有很多世界观。</p>
+                   
+				   <div><br/></div>
+
+                    <p>
+					<span style="font-weight: 600;">3.</span>你会很容易相信现在流行的或你行之有效又身处其中的东西，但它是不是某种永恒的真理，大部分人不会去思考的。你觉得科学对，主要是因为它很大地影响了你的生活的方方面面。科技是理论的使用，但有用不代表实际情况就是这么简单，实际发生了什么很可能是众多理论解释不清楚的，理论常常只是一种简化模型。<br/>
+                    同样，信宗教的人士，应用了他们的方法论，也只是受宗教影响颇深而已。</p>
+					
+                    <p>
+					相信的本质，就不是理智的。<br/>
+                    大众是不会考虑这些东西的，众人身处其中而不自知，“百姓皆谓我自然”。</p>
+					
+                    <p>
+					回过头看，中世纪的广大西方民众也会认为基督教理论有着绝对的正确性。<br/>
+                    当然，很多人内心深处对此有淡淡的不屑，觉得迷信。但他们很多甚至不了解科学到底在干啥？嘿嘿。</p>
+					
+                    <p>
+					甚者，黑中医，骂传统……。但<span style="font-weight: 600;">唯科学论与唯宗教论在本质上没有什么区别，都是排他而已。</span>坚持科学，然后对宗教进行讨伐，一定要说服对方信仰科学，与当年教会迫害异见之人在本质上并没有区别——过于强烈的自我意识，对异见没有包容。</p>
+
+                    <div>
+					<pre style="padding: 10px; overflow: auto; font-size: 14px; word-wrap: normal; background-color: rgb(246, 246, 246); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px;"><code style="margin: 0px; padding: 0px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;">子曰：勿意勿必勿固勿我</code></pre></div>
+					
+					<p><br/></p>
+
+                    <p>
+					就算现在，其实当今的科学也并没有解决所有问题。我们只是在不断猜测、不断发现、再推翻猜测而已。这就是科学的、批判的精神。<br/>
+                    后人也会站在他们的角度嘲笑我们喽～今之视昔蛤蛤蛤～</p>
+					
+                    <p>科学，确实是目前主流的、效果最好的理论体系。但是迷信科学和迷信宗教并没有什么区别，它们都不是那么神圣，只是一种视角下的世界观和方法论罢了。就大多数普通人而言，根本不考虑那么多，也就是拿来用而已。</p>
+					
+                    <p><br/></p>
 
 
+                    <p>
+					<span style="font-weight: 600;">4.</span>若论宗教，其中最精粹的，是另一种视角下的世界观。<br/>宗教，就是另一种世界观，和它的衍生物。只不过经过时间的洗礼，本来纯粹的东西经过人的利益权利斗争等相互作用，衍生出很多其他的东西。而且它毕竟传承了非常悠久的时间，对于我们而言，很多理论、文化出现断层也实属正常……另外世界本身也在变化，很多情况都变了，古代的理论放到现在，多有不妥。</p>
+					
+                    <p>
+					所以：</p>
+
+                    <div>
+					<pre style="padding: 10px; overflow: auto; font-size: 14px; word-wrap: normal; background-color: rgb(246, 246, 246); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px;"><code style="margin: 0px; padding: 0px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;">生乎今之世,反古之道。如此者,灾及其身者也</code></pre></div>
+					
+					<p><br/></p>
+
+                    <p>
+					不要总认为古人愚昧无知。他们用的，就是他们那个时代，最主流，最有效的理论，只是我们现在已经很难理解他们的视角和出发点～<br/>
+                    后之视今,亦由今之视昔。你以为古代人傻，但是人本身，也许并没有变聪明。我们总是容易自认为了不得。<br/>
+                    其实有很多没法用科学解释的现象，而<span style="font-weight: 600;">前沿的学者，面对自然，必定是谦虚的</span>。<br/><span style="font-weight: 600;">察一隅者不能与之言大,审一时者不能与之言化。</span></p>
+
+                    <p>
+					你看到了商业化了的佛教，许多人求神拜佛其实是为了自身利益。这里面确实很多迷信的成分。<br/>
+                    也正因为它传承了悠久的时间，渐失其本。况且流俗必败。多年来也很难正本清源。</p>
+
+                    <p>再者，任何一个圈子里，能接触到最精粹、本质的信息的，都不会是普罗大众。举个例子，你可以很容易地接触到科普，但是你深入进去看论文、追踪前沿却发现与一开始想的也许截然不同，等到自己做研究，那又会有不同的体会了……</p>
+					
+                    <p>
+					相较而言，迷信宗教更糟一些罢了，如果能揭开层层迷雾看到其中本质的道理，那又另说喽。</p>
+
+</div>
+
+                <div class="btm">
+                    <a href="#" class="btn" onclick="hidediv(this);">收起全文</a></div>
+            </div>
+        </div>
+        <hr />
+  </div>
 
 
 <span>
