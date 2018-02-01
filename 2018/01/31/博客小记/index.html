@@ -91,7 +91,7 @@
 <meta property="og:site_name" content="归根">
 <meta property="og:description" content="博客草创及更新 本来是想自己写博客网页的，结果发现折腾起来太麻烦了，css和js看得我脑袋晕~终于不再想自己造轮子了（emmm……其实只是懒蛤蛤蛤蛤），作为一个法学学生我还是省点力气吧。 其实github和markdown我之前在用，所以算是轻车熟路，安装一下node.js和hexo就行。于是就用hexo搭了一个博客，以next作为主题。 感谢互联网时代和各位大佬，网上的教程一搜一大把蛤蛤蛤，哝，">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-31T08:40:08.000Z">
+<meta property="og:updated_time" content="2018-02-01T07:42:56.764Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="博客小记">
 <meta name="twitter:description" content="博客草创及更新 本来是想自己写博客网页的，结果发现折腾起来太麻烦了，css和js看得我脑袋晕~终于不再想自己造轮子了（emmm……其实只是懒蛤蛤蛤蛤），作为一个法学学生我还是省点力气吧。 其实github和markdown我之前在用，所以算是轻车熟路，安装一下node.js和hexo就行。于是就用hexo搭了一个博客，以next作为主题。 感谢互联网时代和各位大佬，网上的教程一搜一大把蛤蛤蛤，哝，">
@@ -302,8 +302,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-01-31T16:40:08+08:00">
-                2018-01-31
+              <time title="更新于" itemprop="dateModified" datetime="2018-02-01T15:42:56+08:00">
+                2018-02-01
               </time>
             
           </span>
@@ -331,7 +331,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  801
+                  838
                 </span>
               
 
@@ -416,28 +416,25 @@
 <li><p>动态背景特效<br>  在<code>主题配置文件</code>中修改如下几个参数为true/false：<br>  canvas_nest: true<br>  canvas_lines: true<br>  three_waves:<br>  canvas_sphere:</p>
 <p>  参考 <a href="http://theme-next.iissnan.com/theme-settings.html#use-bg-animation/" target="_blank" rel="noopener">http://theme-next.iissnan.com/theme-settings.html#use-bg-animation/</a></p>
 </li>
-<li><p>添加文章更新时间<br>  <a href="http://blog.csdn.net/ganzhilin520/article/details/79053399/" target="_blank" rel="noopener">http://blog.csdn.net/ganzhilin520/article/details/79053399/</a></p>
+<li><p><del>添加文章更新时间</del>  <font color="red" face="黑体">请看下面一条</font><br>  <del><a href="http://blog.csdn.net/ganzhilin520/article/details/79053399/" target="_blank" rel="noopener">http://blog.csdn.net/ganzhilin520/article/details/79053399/</a></del></p>
 </li>
 </ul>
 <ul>
-<li>修改网页底部、文章顶部显示更新时间、统计功能<ol>
-<li>主题配置文件,搜索关键字 copyright</li>
+<li><p>修改网页底部、文章顶部显示更新时间、统计功能</p>
+<ol>
+<li>主题配置文件,搜索关键字 copyright 更改值为 false</li>
 <li>打开主题配置文件 _config.yml ,搜索关键字 updated_at 设置为 true</li>
-<li><ul>
-<li>主题根目录下   <code>npm i –save hexo-wordcount</code></li>
-<li>在<code>主题配置文件</code>中修改post_wordcount</li>
+<li> 主题根目录下   <code>npm i –save hexo-wordcount</code><br> 在<code>主题配置文件</code>中修改post_wordcount<ul>
 <li>item_text: true</li>
 <li>wordcount: true</li>
 <li>min2read: true</li>
 <li>totalcount: true</li>
-<li>separated_meta: true<br>详见<a href="http://www.dragonstyle.win/2017/11/07/Hexo-Next%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/" title="Hexo+Next主题优化" target="_blank" rel="noopener">Hexo+Next主题优化</a>  </li>
+<li>separated_meta: true<br>详见<a href="http://www.dragonstyle.win/2017/11/07/Hexo-Next%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/" title="Hexo+Next主题优化" target="_blank" rel="noopener">Hexo+Next主题优化</a><br><br> </li>
 </ul>
 </li>
 </ol>
 </li>
-</ul>
-<ul>
-<li><p>在网站底部加上卜算子访问量<br>  <a href="http://blog.csdn.net/qq_33699981/article/details/72716951" target="_blank" rel="noopener">http://blog.csdn.net/qq_33699981/article/details/72716951</a><br>  我被这个命令给坑了：<code>hexo d -g</code><br>  具体我也不知道发生了什么，长长的报错之后，git终端对于node和npm都反馈bash:command not found，git还能用，然后windows命令行完全正常。。。</p>
+<li><p>在网站底部加上卜算子访问量<br>  <a href="http://blog.csdn.net/qq_33699981/article/details/72716951" target="_blank" rel="noopener">http://blog.csdn.net/qq_33699981/article/details/72716951</a><br>  我被这个命令给坑了：<code>hexo d -g</code><br>  具体我也不知道发生了什么，长长的报错之后，git终端对于node和npm都反馈bash:command not found，git还能用，然后windows命令行完全正常。。。<br>  重装了一遍git，改了下git的环境变量，好了。看来是环境变量的锅。</p>
 <p>  ……</p>
 </li>
 </ul>
