@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[博客小记]]></title>
+    <url>%2F2018%2F01%2F31%2F%E5%8D%9A%E5%AE%A2%E5%B0%8F%E8%AE%B0%2F</url>
+    <content type="text"><![CDATA[博客草创及更新 本来是想自己写博客网页的，结果发现折腾起来太麻烦了，css和js看得我脑袋晕~终于不再想自己造轮子了（emmm……其实只是懒蛤蛤蛤蛤），作为一个法学学生我还是省点力气吧。 其实github和markdown我之前在用，所以算是轻车熟路，安装一下node.js和hexo就行。于是就用hexo搭了一个博客，以next作为主题。 感谢互联网时代和各位大佬，网上的教程一搜一大把蛤蛤蛤，哝，我就参考了以下一些文章，顺便记录一下这个博客的功能更新，诸位要是有兴趣也可以自己搭一个博客玩玩： 多快好省 怎样用hexo搭一个博客？其实已经有很多博客主写过，大体都不会有太大问题——有问题自己搜呗（斜眼笑）。 以下这个知乎回答推荐给小白看： https://www.zhihu.com/question/20003774/answer/115174885/ ou，忘了，这里还有一个坑，如果遇到localhost：4000不能访问，嘿嘿，启动hexo s的时候，用这个命令，换一个端口： hexo s -p 5000 详见 http://blog.csdn.net/u012246342/article/details/51543370/ 其实说真的，还是要多看看官方文档 hexo https://hexo.io/zh-cn/docs// next http://theme-next.iissnan.com/theme-settings.html/ 小修小补 在移动设备下启用NexT主题的目录页面和回到顶部按钮 https://leaferx.online/2017/02/05/EnableTOConMobile// 代码块自定义样式、修改文章内链接文本样式、修改文章底部#号+标签为图片+标签 http://blog.ynxiu.com/2016/hexo-next-theme-optimize.html/ 修改作者头像变为圆形并旋转 http://blog.csdn.net/qq_33699981/article/details/72716951/ 发布显示更多 在你觉得适合的位置插入 &lt;!– more –&gt; 参考 http://code.wileam.com/build-a-hexo-blog-and-optimize/ 开启Scroll Percent、Save Scrol 在主题配置文件中修改 scrollpercent: true save_scroll: true 动态背景特效 在主题配置文件中修改如下几个参数为true/false： canvas_nest: true canvas_lines: true three_waves: canvas_sphere: 参考 http://theme-next.iissnan.com/theme-settings.html#use-bg-animation/ 添加文章更新时间 请看下面一条 http://blog.csdn.net/ganzhilin520/article/details/79053399/ 修改网页底部、文章顶部显示更新时间、统计功能、站内搜索、博文压缩 主题配置文件,搜索关键字 copyright 更改值为 false 打开主题配置文件 _config.yml ,搜索关键字 updated_at 设置为 true 主题根目录下 npm i –save hexo-wordcount 在主题配置文件中修改post_wordcount item_text: true wordcount: true min2read: true totalcount: true separated_meta: true 搜索：略 博文压缩：略 详见Hexo+Next主题优化 在网站底部加上卜算子访问量 http://blog.csdn.net/qq_33699981/article/details/72716951 我被这个命令给坑了：hexo d -g 具体我也不知道发生了什么，长长的报错之后，git终端对于node和npm都反馈bash:command not found，git还能用，然后windows命令行完全正常。。。 重装了一遍git，改了下git的环境变量，好了。看来是环境变量的锅。 …… 当然还有很多我没有列出来，但他们一样给了我很大的帮助，在此一并感谢…… 考虑增加的功能： 评论 站内搜索 about页面 博文压缩 修改字体大小 博文置顶 自定义文章底部版权声明]]></content>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[初衷]]></title>
+    <url>%2F2018%2F01%2F28%2F%E5%88%9D%E8%A1%B7%2F</url>
+    <content type="text"><![CDATA[博客这个东西，我很久之前就想写。今年人心渐安，话也渐渐多了起来，恰是时候。于是开了个博客，在这里写下一些东西，有没有人看，到未必多重要——我只是想写而已。我的初衷主要是锻炼表达能力，整理一下自己的思路。 个人博客这种形式虽然小众和冷门，但其优点在于没有广告（误）个人作为一个主体具有比较强的独立性，而非一个相互影响的社区环境，并且文章的内容和长度也没有限制——这就是自由。 至于社区，我一直不太喜欢贴吧的氛围。微信公众号也有个缺点，发布了之后不能更改文章内容。而知乎自从开放注册之后，也逐渐变化，不是水，就是政治正确，终于让我有些反感了——说带我看到更大的世界的知乎本身已经开始变小了…… 流俗必败，诚哉斯言！ 这个时代太快速、喧嚣了——其本质是肤浅。降本流末，大环境如此。我不是一个聪明人，但我在努力地去看清一些东西，只希望十年、二十年或者五十年之后，我回首看的时候，能够比现在扎得更深，看的更远。能够从喧嚣的山下小村穿过迷雾与枝桠，认准了那条少有人走的路，走上半山腰，看到一些别样的风景…………也许是我有些贪心了。]]></content>
+  </entry>
+</search>
